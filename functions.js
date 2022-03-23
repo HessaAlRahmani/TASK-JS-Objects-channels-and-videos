@@ -72,8 +72,9 @@ function getChannelByName(channelName, channels) {
  ****************************************************************/
 function getChannelByVideoTitle(videoTitle, channels) {
   // Your code here
-  return channels.find((channel) =>
-    channel.videos.some((video) => video.title === videoTitle)
+  return channels.find(
+    (channel) => channel.videos.some((video) => video.title === videoTitle)
+    //could've used channelHasVideo ^^ here instead
   );
 }
 // console.log(getChannelByVideoTitle("The Universal S", channels));
